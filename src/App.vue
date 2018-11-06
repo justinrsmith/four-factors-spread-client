@@ -31,26 +31,28 @@
 </template>
 
 <script>
-import axios from "axios";
-import { getMainColor } from "nba-color";
+import axios from 'axios';
+import { getMainColor } from 'nba-color';
 
 export default {
-  name: "app",
+  name: 'app',
   data: function() {
     return {
-      games: []
+      games: [],
     };
   },
   created: function() {
     let vm = this;
-    axios.get("http://localhost:3000/").then(response => {
-      vm.games = response.data;
-      vm.games.forEach(game => {
-        game.home.team_color = getMainColor(game.home.team_key).hex;
-        game.visitor.team_color = getMainColor(game.visitor.team_key).hex;
+    axios
+      .get('https://25idbhr17d.execute-api.us-east-1.amazonaws.com/dev')
+      .then((response) => {
+        vm.games = response.data;
+        vm.games.forEach((game) => {
+          game.home.team_color = getMainColor(game.home.team_key).hex;
+          game.visitor.team_color = getMainColor(game.visitor.team_key).hex;
+        });
       });
-    });
-  }
+  },
 };
 </script>
 
