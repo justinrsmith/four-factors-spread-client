@@ -31,7 +31,7 @@ export default {
   created: function() {
     let vm = this;
     axios
-      .get('https://25idbhr17d.execute-api.us-east-1.amazonaws.com/dev')
+      .get('https://4vkfarr292.execute-api.us-east-1.amazonaws.com/dev')
       .then((response) => {
         vm.games = response.data;
         vm.games.forEach((game) => {
