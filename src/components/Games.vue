@@ -2,8 +2,8 @@
   <div class="col-lg-6 offset-lg-3 col-md-12 p-0">
     <div class="row">
       <div class="col-6"><strong></strong></div>
-      <div class="col-3"><strong>Model</strong></div>
-      <div class="col-3"><strong>Actual*</strong></div>
+      <div class="col-3"><strong>Model*</strong></div>
+      <div class="col-3"><strong>Actual**</strong></div>
     </div>
     <div v-for="game in games" class="row mb-4" :key="game.id">
       <div class="col border-top border-bottom">

@@ -1,8 +1,25 @@
 <template>
 <div>
-  <app-header></app-header>
+  <app-header>
+    <div class="alert alert-secondary">
+      Model lines are produced primarly using
+      <a href="https://www.basketball-reference.com/about/factors.html">
+        Four Factors
+      </a> data which is then weighted accordingly and used in the projections.
+    </div>
+  </app-header>
   <games :games="games"></games>
-  <app-footer>* Caesars Sportsbook</app-footer>
+  <app-footer>
+    <div class="alert alert-info">
+      <p>
+        <strong>*</strong> Model is updated daily at 5:30 am EST
+      </p>
+      <p>
+        <strong>**</strong> Actual line data is based on Caesars Sportsbook and is updated daily at
+        7:15 am EST and 1:00 pm EST
+      </p>
+    </div>
+  </app-footer>
 </div>
 </template>
 
