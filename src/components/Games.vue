@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-6 offset-lg-3 col-md-12 p-0">
+  <div v-if="games.length" class="col-lg-6 offset-lg-3 col-md-12 p-0">
     <div class="row">
       <div class="col-6"><strong></strong></div>
       <div class="col-3"><strong>Model*</strong></div>
@@ -11,6 +11,11 @@
         <game-row :team-data="game.home" :team-line="game.line.home"></game-row>
         <game-detail :game="game"></game-detail>
       </div>
+    </div>
+  </div>
+  <div v-else class="col-lg-6 offset-lg-3 col-md-12 mb-5">
+    <div class="alert alert-warning">
+      No games today. Please check back tomorrow.
     </div>
   </div>
 </template>
