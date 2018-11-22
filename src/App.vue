@@ -16,7 +16,7 @@
       </p>
       <p>
         <strong>**</strong> Actual line data is based on Caesars Sportsbook and is updated daily at
-        7:15 am EST and 1:00 pm EST
+        7:15 am EST and 11:15 am EST
       </p>
     </div>
   </app-footer>
