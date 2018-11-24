@@ -41,6 +41,15 @@
         </div>
       </div>
     </div>
+    <div v-if="game.home.b2b || game.visitor.b2b" class="row bg-light border-right border-left">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            On B2B: {{ !game.home.b2b ? '' : game.home.abbreviation }} {{ !game.visitor.b2b ? '' : game.visitor.abbreviation }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
