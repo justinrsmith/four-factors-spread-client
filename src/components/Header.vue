@@ -3,7 +3,7 @@
     <nav class="navbar navbar-dark mb-3" style="background-color: #17408B;">
       <span class="navbar-brand mb-0 h1">Four Factors Model</span>
     </nav>
-    <div class="col-lg-6 offset-lg-3 col-md-12">
+    <div class="col-lg-6 offset-lg-3 col-md-12 p-2">
       <slot></slot>
     </div>
   </div>
